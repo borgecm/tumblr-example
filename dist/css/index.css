@@ -19,16 +19,19 @@ body {
 main {
   margin-top: 40px; }
 
-.feed {
-  height: 700px;
-  background-color: red; }
-
 .avatar {
   float: left; }
 
+.feedActions {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 20px 30px 5px; }
+
 .aside {
-  height: 700px;
   background-color: white; }
+
+.blog__avatar {
+  margin-right: 15px; }
 
 .feedcard {
   background-color: white;
@@ -49,3 +52,16 @@ main {
 
 .feedcard__footer__icon {
   margin-right: 30px; }
+
+.blog {
+  margin: 0 30px; }
+
+.blog__left__text__name {
+  font-size: 16px;
+  margin-bottom: 3px;
+  line-height: 1; }
+
+.blog__left__text__desc {
+  font-size: 12px;
+  margin-bottom: 0px;
+  line-height: 1; }
