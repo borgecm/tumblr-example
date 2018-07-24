@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap 4 with sass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+
+</head>
+
+<body>
+  <!-- Just an image -->
+  <header>
+    <nav class="navbar tumblrnav">
+      <div class="d-flex flex-row tumlrnav__left">
+        <a class="navbar-brand navlogo" href="#">
+          <img src="./TumblrImgs/tumblrIcon.png" width="30" height="30" alt="">
+        </a>
+        <form class="form-inline">
+          <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
+        </form>
+      </div>
+      <div class="d-flex flex-row tumlrnav__right">
+        <img class="navImg" src="./TumblrImgs/houseOn.png">
+        <img class="navImg" src="./TumblrImgs/locOff.png">
+        <img class="navImg" src="./TumblrImgs/mailOff.png">
+        <img class="navImg" src="./TumblrImgs/chatOff.png">
+        <img class="navImg" src="./TumblrImgs/boltOff.png">
+        <img class="navImg" src="./TumblrImgs/personOff.png">
+      </div>
+
+
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
+
+            </div>
+            <div class="col-md-10">
+              <div class="feedcard">
+                <div class="feedcard__header d-flex justify-content-between">
+
+                  <div class="feedcard__header__text d-flex flex-row">
+                    <p>Here's a blog: Bob Straus</p>
+                    <a href="">Follow</a>
+                  </div>
+
+                  <div class="feedcard__header__icons">
+                    <img class="deleteButton" src="./TumblrImgs/xClose.png" alt="">
+                    <img src="./TumblrImgs/xClose.png" alt="">
+                  </div>
+
+                </div>
+                <div class="feedcard__content">
+                  <img class="card__photo" src="./TumblrImgs/mainPhoto.png" alt="">
+
+                </div>
+                <div class="feedcard__footer">
+                  <div class="hashtags">
+                    <p>#Cesar</p>
+                  </div>
+                  <div class="bottomCard d-flex justify-content-between">
+                    <p>200 notes</p>
+                    <div class="bottomCard__icons">
+                      <img class="feedcard__footer__icon"src="./TumblrImgs/sideArrow.png" alt="">
+                      <img class="feedcard__footer__icon"src="./TumblrImgs/greyChat.png" alt="">
+                      <img class="feedcard__footer__icon"src="./TumblrImgs/turn.png" alt="">
+                      <img src="./TumblrImgs/heart.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="aside">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
