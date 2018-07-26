@@ -21,10 +21,12 @@
     "copy-and-watch": "^0.1.2",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
+    "gulp-stylelint": "^7.0.0",
     "gulp-util": "^3.0.8",
     "gulp-webserver": "^0.9.1",
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.2"
+    "node-sass": "^4.9.2",
+    "stylelint": "^9.4.0"
   },
   "dependencies": {
     "bootstrap": "^4.1.2"

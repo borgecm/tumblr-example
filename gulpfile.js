@@ -40,10 +40,23 @@ gulp.task('server', () => {
         }))
 })
 
+gulp.task('lint-css', function lintCssTask() {
+    const gulpStylelint = require('gulp-stylelint');
+  
+    return gulp
+      .src('src/scss/*.scss')
+      .pipe(gulpStylelint({
+        reporters: [
+          {formatter: 'string', console: true}
+        ]
+      }));
+  });
+
 gulp.task('start', [
     'html',
     'styles',
     'server',
+    'lint-css',
     'watch'
 ], cb => cb)
 
