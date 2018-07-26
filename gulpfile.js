@@ -46,6 +46,7 @@ gulp.task('lint-css', function lintCssTask() {
     return gulp
       .src('src/scss/*.scss')
       .pipe(gulpStylelint({
+        failAfterError: false,
         reporters: [
           {formatter: 'string', console: true}
         ]

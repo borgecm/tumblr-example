@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tumblr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,600,700" rel="stylesheet">
 
 </head>
@@ -15,32 +15,45 @@
   <!-- Just an image -->
   <header>
     <nav class="navbar tumblrnav">
-      
-      <div class="d-flex flex-row tumlrnav__left ">
-        <a class="navbar-brand navlogo" href="#">
-          <img src="./TumblrImgs/tumblrIcon.png" alt="">
-        </a>
-        <form class="form-inline">
-          <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
-        </form>
-      </div>
-      <div class="d-flex flex-row tumlrnav__right align-items-center">
-        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/houseOn.png"></div>
-        
-        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/locOff.png"></div> 
-        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/mailOff.png"></div> 
-        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/chatOff.png"></div> 
-        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/boltOff.png"></div> 
-        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/personOff.png"></div> 
-        <div class="writeIcon">
-          <img src="./TumblrImgs/pen.png" alt="">
+      <div class="container">
+        <div class="d-flex flex-row tumlrnav__left ">
+          <a class="navbar-brand navlogo" href="#">
+            <img src="./TumblrImgs/tumblrIcon.png" alt="">
+          </a>
+          <form class="form-inline">
+            <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
+          </form>
+        </div>
+        <div class="d-flex flex-row tumlrnav__right align-items-center">
+          <div>
+            <img class="navImg flex-shrink-0" src="./TumblrImgs/houseOn.png">
+          </div>
+
+          <div>
+            <img class="navImg flex-shrink-0" src="./TumblrImgs/locOff.png">
+          </div>
+          <div>
+            <img class="navImg flex-shrink-0" src="./TumblrImgs/mailOff.png">
+          </div>
+          <div>
+            <img class="navImg flex-shrink-0" src="./TumblrImgs/chatOff.png">
+          </div>
+          <div>
+            <img class="navImg flex-shrink-0" src="./TumblrImgs/boltOff.png">
+          </div>
+          <div>
+            <img class="navImg flex-shrink-0" src="./TumblrImgs/personOff.png">
+          </div>
+          <div class="writeIcon">
+            <img src="./TumblrImgs/pen.png" alt="">
+          </div>
         </div>
       </div>
 
 
 
     </nav>
-  </header >
+  </header>
 
   <main>
     <div class="container">
@@ -52,32 +65,37 @@
 
             </div>
             <div class="col-md-10">
-              <div class="feedActions d-flex flex-row justify-content-around flex-wrap">
-                <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                  <img src="./TumblrImgs/text.png" alt="">
-                  <p>Text</p>
+              <!-- Usar section para semantica -->
+              <!-- Deberia ser un nav, al tener solo divs  no es accesible-->
+              <!-- Seria bueno q fuera un ul con li con botones dentro -->
+              <nav>
+                <div class="feedActions d-flex justify-content-around flex-row">
+                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    <i class="sprite sprite__text"></i>
+                    <p>Text</p>
+                  </div>
+                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    <i class="sprite sprite__photo"></i>
+                    <p>Photo</p>
+                  </div>
+                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    <i class="sprite sprite__quote"></i>
+                    <p>Quote</p>
+                  </div>
+                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    <i class="sprite sprite__link"></i>
+                    <p>Link</p>
+                  </div>
+                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    <i class="sprite sprite__audio"></i>
+                    <p>Audio</p>
+                  </div>
+                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    <i class="sprite sprite__video"></i>
+                    <p>Video</p>
+                  </div>
                 </div>
-                <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                  <img src="./TumblrImgs/photo.png" alt="">
-                  <p>Photo</p>
-                </div>
-                <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                  <img src="./TumblrImgs/quote.png" alt="">
-                  <p>Quote</p>
-                </div>
-                <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                  <img src="./TumblrImgs/link.png" alt="">
-                  <p>Link</p>
-                </div>
-                <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                  <img src="./TumblrImgs/audio.png" alt="">
-                  <p>Audio</p>
-                </div>
-                <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                  <img src="./TumblrImgs/video.png" alt="">
-                  <p>Video</p>
-                </div>
-              </div>
+              </nav>
 
             </div>
 
@@ -85,21 +103,26 @@
 
 
           <div class="row">
-            <div class="col-md-2">
+            <!-- El feed card y el avatar deberian estar en un mismo div -->
+            <div class="col-md-2 col-lg-2">
               <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
 
             </div>
-            <div class="col-md-10">
+            <div class="col-sm-12 col-md-10 col-lg-10">
+              <!-- Usar un article pues es contenido q se puede compartir -->
               <div class="feedcard">
                 <div class="feedcard__header d-flex justify-content-between">
 
                   <div class="feedcard__header__text d-flex flex-row">
-                    <p>Here's a blog: <span class="header__text__name">Bob Straus</span></p>
-                    
+                    <p>Here's a blog:
+                      <span class="header__text__name">Bob Straus</span>
+                    </p>
+
                     <a class="feedcard__header__text__link" href="">Follow</a>
                   </div>
 
                   <div class="feedcard__header__icons">
+                    <!-- Hay 2 tipos de imagenes, contenido y diseno(iconos con css) -->
                     <img class="deleteButton" src="./TumblrImgs/xClose.png" alt="">
                     <img src="./TumblrImgs/loc.png" alt="">
                   </div>
@@ -131,10 +154,11 @@
         </div>
 
 
-
-        <div class="col-md-4">
+        <!-- Ponerle un offset -->
+        <div class="offset-lg-1 col-lg-3 col-sm-12 col-md-4">
           <div class="aside">
             <div class="blogs">
+              <!-- Tenerle un section a cada seccion -->
               <p class="blogs__title">RECOMMENDED BLOGS</p>
               <div class="blog d-flex flex-row justify-content-between">
                 <div class="blog__left d-flex flex-row justify-content-start">
@@ -144,7 +168,7 @@
 
                   <div class="blog__left__text">
                     <p class="blog__left__text__name">username</p>
-                    <p class="blog__left__text__desc">Tumblr username</p>
+                    <p class="blog__left__text__desc">Tumblr user name</p>
                   </div>
                 </div>
                 <div class="blog__right">

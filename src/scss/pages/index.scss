@@ -7,7 +7,7 @@ body{
     background-color: #36465D;
 }
 .navlogo{
-    margin-left: 60px;
+    
     margin-right: 60px;
 }
 
@@ -108,7 +108,7 @@ main{
 }
 
 .blogs__title{
-    margin: 0px 30px 15px;
+    padding: 0px 30px 15px;
     font-weight: bold;
 }
 .blogs__link{
@@ -117,7 +117,8 @@ main{
 }
 
 .blog{
-    margin: 0 30px;
+    padding: 0 30px;
+    width: 100%;
 }
 .blog__left__text__name{
     font-size: 14px;
