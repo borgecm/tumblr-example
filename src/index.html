@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bootstrap 4 with sass</title>
+  <title>Tumblr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,600,700" rel="stylesheet">
 
 </head>
 
@@ -14,21 +15,26 @@
   <!-- Just an image -->
   <header>
     <nav class="navbar tumblrnav">
-      <div class="d-flex flex-row tumlrnav__left">
+      
+      <div class="d-flex flex-row tumlrnav__left ">
         <a class="navbar-brand navlogo" href="#">
-          <img src="./TumblrImgs/tumblrIcon.png" width="30" height="30" alt="">
+          <img src="./TumblrImgs/tumblrIcon.png" alt="">
         </a>
         <form class="form-inline">
           <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
         </form>
       </div>
-      <div class="d-flex flex-row tumlrnav__right">
-        <img class="navImg" src="./TumblrImgs/houseOn.png">
-        <img class="navImg" src="./TumblrImgs/locOff.png">
-        <img class="navImg" src="./TumblrImgs/mailOff.png">
-        <img class="navImg" src="./TumblrImgs/chatOff.png">
-        <img class="navImg" src="./TumblrImgs/boltOff.png">
-        <img class="navImg" src="./TumblrImgs/personOff.png">
+      <div class="d-flex flex-row tumlrnav__right align-items-center">
+        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/houseOn.png"></div>
+        
+        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/locOff.png"></div> 
+        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/mailOff.png"></div> 
+        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/chatOff.png"></div> 
+        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/boltOff.png"></div> 
+        <div><img class="navImg flex-shrink-0" src="./TumblrImgs/personOff.png"></div> 
+        <div class="writeIcon">
+          <img src="./TumblrImgs/pen.png" alt="">
+        </div>
       </div>
 
 
@@ -88,13 +94,14 @@
                 <div class="feedcard__header d-flex justify-content-between">
 
                   <div class="feedcard__header__text d-flex flex-row">
-                    <p>Here's a blog: Bob Straus</p>
-                    <a href="">Follow</a>
+                    <p>Here's a blog: <span class="header__text__name">Bob Straus</span></p>
+                    
+                    <a class="feedcard__header__text__link" href="">Follow</a>
                   </div>
 
                   <div class="feedcard__header__icons">
                     <img class="deleteButton" src="./TumblrImgs/xClose.png" alt="">
-                    <img src="./TumblrImgs/xClose.png" alt="">
+                    <img src="./TumblrImgs/heart.png" alt="">
                   </div>
 
                 </div>
@@ -127,55 +134,104 @@
 
         <div class="col-md-4">
           <div class="aside">
-            <p>Recommended Blogs</p>
-            <div class="blog d-flex flex-row justify-content-between">
-              <div class="blog__left d-flex flex-row justify-content-start">
-                <div>
-                  <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
-                </div>
+            <div class="blogs">
+              <p class="blogs__title">RECOMMENDED BLOGS</p>
+              <div class="blog d-flex flex-row justify-content-between">
+                <div class="blog__left d-flex flex-row justify-content-start">
+                  <div>
+                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
+                  </div>
 
-                <div class="blog__left__text">
-                  <p class="blog__left__text__name m-0">Username</p>
-                  <p class="blog__left__text__desc m-0">Tumblr username</p>
+                  <div class="blog__left__text">
+                    <p class="blog__left__text__name">username</p>
+                    <p class="blog__left__text__desc">Tumblr username</p>
+                  </div>
+                </div>
+                <div class="blog__right">
+                  <img src="./TumblrImgs/plusBox.png" alt="">
                 </div>
               </div>
-              <div class="blog__right">
-                <img src="./TumblrImgs/plusBox.png" alt="">
+              <hr>
+              <div class="blog d-flex flex-row justify-content-between">
+                <div class="blog__left d-flex flex-row justify-content-start">
+                  <div>
+                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR2.png" alt="">
+                  </div>
+
+                  <div class="blog__left__text">
+                    <p class="blog__left__text__name">username</p>
+                    <p class="blog__left__text__desc">Tumblr username</p>
+                  </div>
+                </div>
+                <div class="blog__right">
+                  <img src="./TumblrImgs/plusBox.png" alt="">
+                </div>
+              </div>
+              <hr>
+              <div class="blog d-flex flex-row justify-content-between">
+                <div class="blog__left d-flex flex-row justify-content-start">
+                  <div>
+                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR3.png" alt="">
+                  </div>
+
+                  <div class="blog__left__text">
+                    <p class="blog__left__text__name">username</p>
+                    <p class="blog__left__text__desc">Tumblr username</p>
+                  </div>
+                </div>
+                <div class="blog__right">
+                  <img src="./TumblrImgs/plusBox.png" alt="">
+                </div>
+              </div>
+              <hr>
+              <div class="blog d-flex flex-row justify-content-between">
+                <div class="blog__left d-flex flex-row justify-content-start">
+                  <div>
+                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR4.png" alt="">
+                  </div>
+
+                  <div class="blog__left__text">
+                    <p class="blog__left__text__name">username</p>
+                    <p class="blog__left__text__desc">Tumblr username</p>
+                  </div>
+                </div>
+                <div class="blog__right">
+                  <img src="./TumblrImgs/plusBox.png" alt="">
+                </div>
+              </div>
+              <hr>
+              <a class="blogs__link" href="">EXPLORE TUMBLR</a>
+            </div>
+            <div class="radar">
+              <p class="radar__title">RADAR</p>
+              <div class="radar__content">
+                <div class="radar__blog d-flex flex-row justify-content-between">
+                  <div class="blog__left d-flex flex-row justify-content-start">
+                    <div>
+                      <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoRadarGirl.png" alt="">
+                    </div>
+
+                    <div class="blog__left__text">
+                      <p class="blog__left__text__name">username</p>
+                      <p class="blog__left__text__desc">Tumblr username</p>
+                    </div>
+                  </div>
+                  <div class="blog__right">
+                    <img src="./TumblrImgs/plusBox.png" alt="">
+                  </div>
+                </div>
+                <img src="./TumblrImgs/radarPhoto.png" alt="" class="radar__image">
+              </div>
+
+              <div class="radar__footer d-flex flex-row justify-content-between">
+                <p>1,320 notes</p>
+                <div class="radar__footer_icons">
+                  <img src="./TumblrImgs/turn.png" alt="" class="footer_icons_i">
+                  <img src="./TumblrImgs/heart.png" alt="" class="footer_icons_i">
+                </div>
               </div>
             </div>
-            <hr>
-            <div class="blog d-flex flex-row justify-content-between">
-              <div class="blog__left d-flex flex-row justify-content-start">
-                <div>
-                  <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
-                </div>
 
-                <div class="blog__left__text">
-                  <p class="blog__left__text__name m-0">Username</p>
-                  <p class="blog__left__text__desc m-0">Tumblr username</p>
-                </div>
-              </div>
-              <div class="blog__right">
-                <img src="./TumblrImgs/plusBox.png" alt="">
-              </div>
-            </div>
-            <hr>
-            <div class="blog d-flex flex-row justify-content-between">
-              <div class="blog__left d-flex flex-row justify-content-start">
-                <div>
-                  <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
-                </div>
-
-                <div class="blog__left__text">
-                  <p class="blog__left__text__name m-0">Username</p>
-                  <p class="blog__left__text__desc m-0">Tumblr username</p>
-                </div>
-              </div>
-              <div class="blog__right">
-                <img src="./TumblrImgs/plusBox.png" alt="">
-              </div>
-            </div>
-            <hr>
           </div>
         </div>
       </div>

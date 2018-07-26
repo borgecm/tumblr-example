@@ -1,8 +1,9 @@
 body{
     background-color: #d2dae6;
+    font-family:'Open Sans', sans-serif;
 }
 .tumblrnav{
-    padding: 20px;
+    
     background-color: #36465D;
 }
 .navlogo{
@@ -13,10 +14,24 @@ body{
 .tumblrinput{
     background-color: #2d3a4e;
     border-width: 0;
+    outline: none;
+    color: #c6c6c6;
+    background-image: url('../TumblrImgs/searchIcon.png');
+    background-position: 20px 7px; 
+    background-repeat: no-repeat;
+    padding: 3px 20px 3px 45px;
 }
 
 .navImg{
     margin-right: 30px;
+}
+
+.writeIcon{
+    background-color: #529ecc;
+    padding: 8px 8px;
+    border-radius: 10%;
+    overflow:auto;
+    line-height: 1;
 }
 
 main{
@@ -34,8 +49,18 @@ main{
     padding: 20px 30px 5px;
 }
 
-.aside{
+.blogs{
     background-color: white;
+    padding-top:15px;
+    padding-bottom: 15px;
+    
+}
+
+.blogs{
+    background-color: white;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
     
 }
 
@@ -47,10 +72,22 @@ main{
 .feedcard{
     background-color: white;
     margin-bottom: 30px;
+    color: #8f8f8f;
 }
 
 .feedcard__header{
     padding: 20px 30px 5px;
+}
+.feedcard__header__text{
+    
+}
+
+.header__text__name{
+    font-weight: 600;
+}
+
+.feedcard__header__text__link{
+    margin-left: 30px;
 }
 
 .deleteButton{
@@ -70,17 +107,59 @@ main{
     margin-right: 30px;
 }
 
+.blogs__title{
+    margin: 0px 30px 15px;
+    font-weight: bold;
+}
+.blogs__link{
+    margin: 0px 30px 15px;
+    font-weight: 600;
+}
+
 .blog{
     margin: 0 30px;
 }
 .blog__left__text__name{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 3px;
     line-height: 1;
+    font-weight: 600;
+    color: #565656;
 }
 
 .blog__left__text__desc{
     font-size: 12px;
     margin-bottom: 0px;
     line-height: 1;
+    color: #b0b0b0;
+}
+
+.radar{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.radar__blog{
+    
+    margin-bottom: 15px;
+}
+
+.radar__footer{
+    color: #8f8f8f;
+    font-weight: 600;
+}
+.radar__title{
+    margin-bottom:30px;
+    font-weight: bold;
+}
+
+.radar__image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer_icons_i{
+    margin-left: 15px;
 }
