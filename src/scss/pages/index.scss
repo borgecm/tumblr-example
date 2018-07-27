@@ -78,9 +78,6 @@ main{
 .feedcard__header{
     padding: 20px 30px 5px;
 }
-.feedcard__header__text{
-    
-}
 
 .header__text__name{
     font-weight: 600;
@@ -163,4 +160,16 @@ main{
 
 .footer_icons_i{
     margin-left: 15px;
+}
+
+.light{
+    color: #A0A0A0;
+}
+
+.icon-on{
+    color: white;
+}
+
+.icon-off{
+    color: #6E7A8A;
 }

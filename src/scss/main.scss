@@ -2,7 +2,12 @@
 //@import "helpers/variables.scss";
 
 // load vendor libs, but just what you need
-@import "vendor/bootstrap-custom";
+@import "fontawesome";
+@import "solid";
+@import "regular";
+
+@import "bootstrap";
+
 
 // load components
 @import "components/sprites";

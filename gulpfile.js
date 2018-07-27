@@ -16,6 +16,7 @@ let path = require('path')
 gulp.task('styles', () => {
     return gulp.src('src/scss/main.scss')
         .pipe(sass({includePaths: [
+                path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/scss'),
                 path.join(__dirname, 'node_modules/bootstrap/scss'),
                 path.join(__dirname, 'src/scss')]
             , outputStyle: 'compressed'}))
@@ -40,6 +41,14 @@ gulp.task('server', () => {
         }))
 })
 
+/**
+ * Copies font awesome fonts into dist folder
+ */
+gulp.task('fonts', () => {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+      .pipe(gulp.dest('dist/fonts/'));
+  });
+
 gulp.task('lint-css', function lintCssTask() {
     const gulpStylelint = require('gulp-stylelint');
   
@@ -58,6 +67,7 @@ gulp.task('start', [
     'styles',
     'server',
     'lint-css',
+    'fonts',
     'watch'
 ], cb => cb)
 
