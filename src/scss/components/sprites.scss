@@ -6,118 +6,168 @@
   text-align: left;
 }
 
-.sprite__photo {
+.sprite__camera-modal {
   background-position: -2px -0px;
+  width: 48px;
+  height: 33px;
+}
+.sprite__globo {
+  background-position: -2px -35px;
+  width: 46px;
+  height: 46px;
+}
+.sprite__photo {
+  background-position: -2px -83px;
   width: 31px;
   height: 25px;
 }
 .sprite__video {
-  background-position: -2px -27px;
+  background-position: -2px -110px;
   width: 31px;
   height: 22px;
 }
 .sprite__audio {
-  background-position: -2px -51px;
+  background-position: -2px -134px;
   width: 28px;
   height: 29px;
 }
 .sprite__chat {
-  background-position: -2px -82px;
+  background-position: -2px -165px;
   width: 27px;
   height: 27px;
 }
 .sprite__link {
-  background-position: -2px -111px;
+  background-position: -2px -194px;
   width: 27px;
   height: 27px;
 }
 .sprite__quote {
-  background-position: -2px -140px;
+  background-position: -2px -223px;
   width: 26px;
   height: 23px;
 }
 .sprite__text {
-  background-position: -2px -165px;
+  background-position: -2px -248px;
   width: 26px;
   height: 16px;
 }
 .sprite__chatoff {
-  background-position: -2px -183px;
+  background-position: -2px -266px;
   width: 22px;
   height: 20px;
 }
+.sprite__bird {
+  background-position: -26px -266px;
+  width: 21px;
+  height: 17px;
+}
+.sprite__conf {
+  background-position: -26px -285px;
+  width: 20px;
+  height: 20px;
+}
 .sprite__houseon {
-  background-position: -2px -205px;
+  background-position: -2px -288px;
   width: 20px;
   height: 21px;
 }
 .sprite__loc {
-  background-position: -2px -228px;
+  background-position: -24px -307px;
   width: 20px;
   height: 20px;
 }
 .sprite__locoff {
-  background-position: -2px -250px;
+  background-position: -2px -311px;
   width: 20px;
   height: 20px;
 }
 .sprite__sidearrow {
-  background-position: -2px -272px;
+  background-position: -24px -329px;
   width: 20px;
   height: 14px;
 }
+.sprite__video-lines {
+  background-position: -2px -333px;
+  width: 20px;
+  height: 15px;
+}
+.sprite__camera-lines {
+  background-position: -24px -345px;
+  width: 19px;
+  height: 15px;
+}
+.sprite__gif {
+  background-position: -2px -350px;
+  width: 19px;
+  height: 8px;
+}
 .sprite__mailoff {
-  background-position: -2px -288px;
+  background-position: -2px -360px;
   width: 19px;
   height: 14px;
 }
 .sprite__tumblricon {
-  background-position: -2px -304px;
+  background-position: -23px -362px;
   width: 19px;
   height: 31px;
 }
 .sprite__greychat {
-  background-position: -2px -337px;
+  background-position: -30px -223px;
   width: 18px;
   height: 16px;
 }
 .sprite__plusbox {
-  background-position: -2px -355px;
+  background-position: -30px -241px;
   width: 18px;
   height: 18px;
 }
 .sprite__pen {
-  background-position: -2px -375px;
+  background-position: -31px -165px;
   width: 17px;
   height: 17px;
 }
 .sprite__turn {
-  background-position: -2px -394px;
+  background-position: -31px -184px;
   width: 17px;
   height: 16px;
 }
 .sprite__heart {
-  background-position: -2px -412px;
+  background-position: -32px -134px;
   width: 15px;
   height: 14px;
 }
 .sprite__personoff {
-  background-position: -2px -428px;
+  background-position: -31px -202px;
   width: 15px;
   height: 18px;
 }
 .sprite__searchicon {
-  background-position: -2px -448px;
+  background-position: -2px -376px;
   width: 15px;
   height: 15px;
 }
 .sprite__xclose {
-  background-position: -2px -465px;
+  background-position: -32px -150px;
   width: 14px;
   height: 14px;
 }
+.sprite__dots {
+  background-position: -35px -83px;
+  width: 13px;
+  height: 3px;
+}
 .sprite__boltoff {
-  background-position: -19px -412px;
+  background-position: -35px -88px;
   width: 12px;
   height: 20px;
+}
+.sprite__arrow-white {
+  background-position: -35px -110px;
+  width: 9px;
+  height: 5px;
+}
+.sprite__arrow {
+  background-position: -35px -117px;
+  width: 9px;
+  height: 5px;
 }

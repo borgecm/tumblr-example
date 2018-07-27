@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tumblr</title>
+  <title>Home - Tumblr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i,600,700" rel="stylesheet">
@@ -26,26 +26,26 @@
         </div>
         <div class="d-flex flex-row tumlrnav__right align-items-center">
           <div>
-              <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
+            <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
           </div>
 
           <div>
-              <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
+            <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
           </div>
           <div>
-              <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
+            <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
           </div>
           <div>
-              <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
+            <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
           </div>
           <div>
-              <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
+            <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
           </div>
           <div>
-              <i class="far fa-user navImg icon-off flex-shrink-0"></i>
+            <i class="far fa-user navImg icon-off flex-shrink-0"></i>
           </div>
           <div class="writeIcon">
-              <i class="fas fa-pen icon-off"></i>
+            <i class="fas fa-pen icon-off"></i>
           </div>
         </div>
       </div>
@@ -55,13 +55,13 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-2">
-                
+
               <img src="./TumblrImgs/pPhotoRetroGirl.png" alt="" class="avatar">
 
             </div>
@@ -71,10 +71,11 @@
               <!-- Seria bueno q fuera un ul con li con botones dentro -->
               <nav>
                 <div class="feedActions d-flex justify-content-around flex-row">
-                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                  <div data-toggle="modal" data-target="#exampleModalCenter" class="actionIcon d-flex flex-column align-items-center justify-content-between">
                     <i class="sprite sprite__text"></i>
                     <p>Text</p>
                   </div>
+
                   <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
                     <i class="sprite sprite__photo"></i>
                     <p>Photo</p>
@@ -119,14 +120,14 @@
                       <span class="header__text__name">Bob Straus</span>
                     </p>
 
-                    <a  class="col" href="#">Follow</a>
+                    <a class="col" href="#">Follow</a>
                   </div>
 
                   <div class="d-flex flex-rowfeedcard__header__icons flex-shrink-0 align-items-start">
                     <!-- Hay 2 tipos de imagenes, contenido y diseno(iconos con css) -->
                     <i class="fas fa-times light col"></i>
                     <i class="fas fa-compass light col"></i>
-                    
+
                   </div>
 
                 </div>
@@ -263,9 +264,57 @@
       </div>
     </div>
     </div>
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">mikemike
+              <i class="sprite sprite__arrow"></i>
+            </h5>
+            <i class="sprite sprite__conf"></i>
+
+          </div>
+          <div class="modal-body">
+            <div class="modal_content">
+              <div class="d-flex justify-content-around">
+                <div class="option d-flex flex-column align-items-center justify-content-between">
+                  <i class="sprite sprite__camera-modal align-self-center"></i>
+                  <p class="option__text">Upload photos</p>
+                </div>
+                <div class="option d-flex flex-column align-items-center justify-content-between">
+                  <i class="sprite sprite__globo"></i>
+                  <p class="option__text">Upload photos</p>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn modal__footer__close mr-auto" data-dismiss="modal">CLOSE</button>
+            <button type="button" class="btn modal__footer__post">Post
+              <i class="fas fa-angle-down post__arrow"></i>
+            </button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

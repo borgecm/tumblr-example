@@ -34,7 +34,7 @@ body{
     line-height: 1;
 }
 
-main{
+.main{
     margin-top: 40px;
 }
 
@@ -172,4 +172,38 @@ main{
 
 .icon-off{
     color: #6E7A8A;
+}
+
+.modal-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal-body{
+    background-color: #f3f3f3;
+    padding: 65px 0;
+}
+
+.option__text{
+    margin-top: 30px;
+    color: #bbbbbb;
+}
+
+.modal__footer__close{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.modal__footer__post{
+    background-color: #529ecc;
+    border: none;
+    border-radius: 10%;
+    padding: 13px 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.post__arrow{
+    margin-left: 15px;
 }
