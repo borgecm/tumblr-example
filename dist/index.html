@@ -55,105 +55,113 @@
     </nav>
   </header>
 
-  <main class="main">
-    <div class="container">
+
+  <div class="container">
+    <main class="main">
       <div class="row">
+
         <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-2">
-
-              <img src="./TumblrImgs/pPhotoRetroGirl.png" alt="" class="avatar">
-
-            </div>
-            <div class="col-md-10">
-              <!-- Usar section para semantica -->
-              <!-- Deberia ser un nav, al tener solo divs  no es accesible-->
-              <!-- Seria bueno q fuera un ul con li con botones dentro -->
-              <nav>
-                <div class="feedActions d-flex justify-content-around flex-row">
-                  <div data-toggle="modal" data-target="#exampleModalCenter" class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    <i class="sprite sprite__text"></i>
-                    <p>Text</p>
-                  </div>
-
-                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    <i class="sprite sprite__photo"></i>
-                    <p>Photo</p>
-                  </div>
-                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    <i class="sprite sprite__quote"></i>
-                    <p>Quote</p>
-                  </div>
-                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    <i class="sprite sprite__link"></i>
-                    <p>Link</p>
-                  </div>
-                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    <i class="sprite sprite__audio"></i>
-                    <p>Audio</p>
-                  </div>
-                  <div class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    <i class="sprite sprite__video"></i>
-                    <p>Video</p>
-                  </div>
-                </div>
-              </nav>
-
-            </div>
-
-          </div>
-
-
-          <div class="row">
-            <!-- El feed card y el avatar deberian estar en un mismo div -->
-            <div class="col-md-2 col-lg-2">
-              <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
-
-            </div>
-            <div class="col-sm-12 col-md-10 col-lg-10">
-              <!-- Usar un article pues es contenido q se puede compartir -->
-              <div class="feedcard">
-                <div class="feedcard__header d-flex justify-content-between">
-
-                  <div class="feedcard__header__text d-flex flex-row">
-                    <p>Here's a blog:
-                      <span class="header__text__name">Bob Straus</span>
-                    </p>
-
-                    <a class="col" href="#">Follow</a>
-                  </div>
-
-                  <div class="d-flex flex-rowfeedcard__header__icons flex-shrink-0 align-items-start">
-                    <!-- Hay 2 tipos de imagenes, contenido y diseno(iconos con css) -->
-                    <i class="fas fa-times light col"></i>
-                    <i class="fas fa-compass light col"></i>
-
-                  </div>
-
-                </div>
-                <div class="feedcard__content">
-                  <img class="card__photo" src="./TumblrImgs/mainPhoto.png" alt="">
-
-                </div>
-                <div class="feedcard__footer">
-                  <div class="hashtags">
-                    <p>#Cesar</p>
-                  </div>
-                  <div class="bottomCard d-flex justify-content-between">
-                    <p>200 notes</p>
-                    <div class="bottomCard__icons">
-                      <img class="feedcard__footer__icon" src="./TumblrImgs/sideArrow.png" alt="">
-                      <img class="feedcard__footer__icon" src="./TumblrImgs/greyChat.png" alt="">
-                      <img class="feedcard__footer__icon" src="./TumblrImgs/turn.png" alt="">
-                      <img src="./TumblrImgs/heart.png" alt="">
-                    </div>
-                  </div>
+          <section class="new-post">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="new-post__avatar">
+                    <img src="./TumblrImgs/pPhotoRetroGirl.png" alt="" class="avatar">
                 </div>
               </div>
-
+              <div class="col-md-10">
+                <div class="new-post__actions d-flex justify-content-around flex-row">
+                  <!-- <div data-toggle="modal" data-target="#exampleModalCenter" class="actionIcon d-flex flex-column align-items-center justify-content-between">
+                    
+                  </div> -->
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__text"></i>
+                      <p>Text</p>
+                  </button>
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__photo"></i>
+                      <p>Photo</p>
+                  </button>
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__quote"></i>
+                      <p>Quote</p>
+                  </button>
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__link"></i>
+                      <p>Link</p>
+                  </button>
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__chat"></i>
+                      <p>Chat</p>
+                  </button>
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__audio"></i>
+                      <p>Audio</p>
+                  </button>
+                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="sprite sprite__video"></i>
+                      <p>Video</p>
+                  </button>
+                </div>
+              </div>
             </div>
+          </section>
+          <section class="feed">
+            <article class="feed__post">
+              <div class="row">
+                <div class="col-md-2 col-lg-2">
+                  <div class="feed__post__avatar">
+                      <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-10">
+                  <!-- Usar un article pues es contenido q se puede compartir -->
+                  <div class="feed__post__card">
+                    <div class="feed__post__card__header d-flex justify-content-between">
 
-          </div>
+                      <div class="feed__post__card__header__text d-flex flex-row">
+                        <p>Here's a blog:
+                          <span class="feed__post__card__header__name">Bob Straus</span>
+                        </p>
+
+                        <a class="col" href="#">Follow</a>
+                      </div>
+
+                      <div class="feed__post__card__header__icons d-flex flex-row  flex-shrink-0 align-items-start">
+                        <!-- Hay 2 tipos de imagenes, contenido y diseno(iconos con css) -->
+                        <i class="fas fa-times light col"></i>
+                        <i class="fas fa-compass light col"></i>
+
+                      </div>
+
+                    </div>
+                    <div class="feed__post__card__content">
+                      <img class="card__photo" src="./TumblrImgs/mainPhoto.png" alt="">
+
+                    </div>
+                    <div class="feed__post__card__footer">
+                      <div class="hashtags">
+                        <p>#Cesar</p>
+                      </div>
+                      <div class="bottomCard d-flex justify-content-between">
+                        <p>200 notes</p>
+                        <div class="bottomCard__icons">
+                          <img class="feed__post__card__footer__icon" src="./TumblrImgs/sideArrow.png" alt="">
+                          <img class="feed__post__card__footer__icon" src="./TumblrImgs/greyChat.png" alt="">
+                          <img class="feed__post__card__footer__icon" src="./TumblrImgs/turn.png" alt="">
+                          <img src="./TumblrImgs/heart.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+
+          </section>
+
+
         </div>
 
 
@@ -262,53 +270,53 @@
           </div>
         </div>
       </div>
-    </div>
-    </div>
+  </div>
+  </div>
 
-    <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">mikemike
-              <i class="sprite sprite__arrow"></i>
-            </h5>
-            <i class="sprite sprite__conf"></i>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">mikemike
+            <i class="sprite sprite__arrow"></i>
+          </h5>
+          <i class="sprite sprite__conf"></i>
 
-          </div>
-          <div class="modal-body">
-            <div class="modal_content">
-              <div class="d-flex justify-content-around">
-                <div class="option d-flex flex-column align-items-center justify-content-between">
-                  <i class="sprite sprite__camera-modal align-self-center"></i>
-                  <p class="option__text">Upload photos</p>
-                </div>
-                <div class="option d-flex flex-column align-items-center justify-content-between">
-                  <i class="sprite sprite__globo"></i>
-                  <p class="option__text">Upload photos</p>
-                </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal_content">
+            <div class="d-flex justify-content-around">
+              <div class="option d-flex flex-column align-items-center justify-content-between">
+                <i class="sprite sprite__camera-modal align-self-center"></i>
+                <p class="option__text">Upload photos</p>
               </div>
-
-
+              <div class="option d-flex flex-column align-items-center justify-content-between">
+                <i class="sprite sprite__globo"></i>
+                <p class="option__text">Upload photos</p>
+              </div>
             </div>
 
-          </div>
-          <div class="modal-footer">
-
-            <button type="button" class="btn modal__footer__close mr-auto" data-dismiss="modal">CLOSE</button>
-            <button type="button" class="btn modal__footer__close" >
-              <i class="sprite sprite__bird"></i>
-            </button>
-            <button type="button" class="btn modal__footer__post">Post
-              <i class="fas fa-angle-down post__arrow"></i>
-            </button>
-
 
           </div>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn modal__footer__close mr-auto" data-dismiss="modal">CLOSE</button>
+          <button type="button" class="btn modal__footer__close">
+            <i class="sprite sprite__bird"></i>
+          </button>
+          <button type="button" class="btn modal__footer__post">Post
+            <i class="fas fa-angle-down post__arrow"></i>
+          </button>
+
+
         </div>
       </div>
     </div>
+  </div>
   </main>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

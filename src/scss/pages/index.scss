@@ -43,10 +43,14 @@
 }
 
 
-.feedActions{
+.new-post__actions{
     background-color: white;
     margin-bottom: 30px;
     padding: 20px 30px 5px;
+}
+
+.new-post__actions__btn{
+    background-color: transparent;
 }
 
 .blogs{
@@ -69,17 +73,17 @@
     margin-right: 15px;
 }
 
-.feedcard{
+.feed__post__card{
     background-color: white;
     margin-bottom: 30px;
     color: #8f8f8f;
 }
 
-.feedcard__header{
+.feed__post__card__header{
     padding: 20px 30px 5px;
 }
 
-.header__text__name{
+.feed__post__card__header__name{
     font-weight: 600;
 }
 
@@ -95,12 +99,12 @@
     width: 100%;
 }
 
-.feedcard__footer{
+.feed__post__card__footer{
     background-color: white;
     padding: 20px 30px 5px;
 }
 
-.feedcard__footer__icon{
+.feed__post__card__footer__icon{
     margin-right: 30px;
 }
 
