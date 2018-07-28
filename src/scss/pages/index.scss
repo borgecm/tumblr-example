@@ -1,4 +1,4 @@
-body{
+.index-body{
     background-color: #d2dae6;
     font-family:'Open Sans', sans-serif;
 }
@@ -193,6 +193,7 @@ body{
     background-color: transparent;
     border: none;
     font-weight: bold;
+    font-size: 11px;
 }
 
 .modal__footer__post{
@@ -202,6 +203,8 @@ body{
     padding: 13px 22px;
     font-weight: bold;
     color: white;
+    line-height: 1;
+    font-size: 13px;
 }
 
 .post__arrow{

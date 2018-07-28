@@ -1,8 +1,9 @@
 .login-main{
-  padding-top: 26vh;
+  padding-top: 26.2vh;
+  
 }
 
-.login-background{
+.login-body{
   background-image: url(../TumblrImgs/BG.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -11,28 +12,40 @@
   height: 100vh;
   
 }
+.login-form{
+  margin-bottom: 10vh;
+}
 
 .login-form__logo{
   margin-bottom: 12vh;
 }
 
 .login-form__email-input{
-  padding: 23px 30px;
+  padding: 18px 30px;
   margin-bottom: 3.6vh;
+  line-height: 1;
 }
 
 .login-form__next-btn{
   background-color: #ec8524;
   color: white;
-  padding: 20px 0;
+  padding: 22px 0;
   border: none;
   font-weight: bold;
+  margin-bottom: 7.2vh;
+  line-height: 1;
+  width: 100%;
   
 }
 
-.login-form__sign-up-btn{
+.login-form__sign-up-link{
   background-color: transparent;
   color: white;
   border: none;
   font-weight: bold;
+  font-size: 18px;
+}
+
+.footer__link{
+  color: #9fa3a7;
 }
