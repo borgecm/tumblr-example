@@ -38,10 +38,6 @@
     margin-top: 40px;
 }
 
-.avatar{
-    float: left;
-}
-
 
 .new-post__actions{
     background-color: white;
@@ -49,34 +45,17 @@
     padding: 20px 30px 5px;
 }
 
-.new-post__actions__btn{
+.transparent-button{
     background-color: transparent;
+    padding-top: 0;
 }
 
-.blogs{
-    background-color: white;
-    padding-top:15px;
-    padding-bottom: 15px;
-    
-}
 
-.blogs{
-    background-color: white;
-    padding-top:15px;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-    
-}
-
-.blog__avatar{
-    
-    margin-right: 15px;
-}
 
 .feed__post__card{
     background-color: white;
     margin-bottom: 30px;
-    color: #8f8f8f;
+    
 }
 
 .feed__post__card__header{
@@ -95,36 +74,70 @@
     margin-right: 30px;
 }
 
-.card__photo{
+.feed__post__card__content__img{
     width: 100%;
 }
 
 .feed__post__card__footer{
     background-color: white;
-    padding: 20px 30px 5px;
+    padding: 20px 30px;
 }
 
-.feed__post__card__footer__icon{
-    margin-right: 30px;
+.feed__post__card__footer__hashtags{
+    list-style-type: none;
+    margin-bottom: 35px;
+    padding: 0;
 }
+
+.feed__post__card__footer__hashtags__li{
+    display: inline-block;
+    color: #8f8f8f
+}
+
+
+
+.footer_icons_i{
+    margin-left: 15px;
+}
+
+
+.blogs{
+    background-color: white;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    
+}
+
+
 
 .blogs__title{
     padding: 0px 30px 15px;
     font-weight: bold;
 }
+
+.blogs__blog{
+    padding: 0 30px;
+    width: 100%;
+}
+
+.blogs__blog__avatar{
+    
+    margin-right: 15px;
+}
+
 .blogs__link{
     margin: 0px 30px 15px;
     font-weight: 600;
 }
 
-.blog{
-    padding: 0 30px;
-    width: 100%;
+.blog__left__text{
+    line-height: 1;
 }
+
 .blog__left__text__name{
     font-size: 14px;
     margin-bottom: 3px;
-    line-height: 1;
     font-weight: 600;
     color: #565656;
 }
@@ -132,7 +145,6 @@
 .blog__left__text__desc{
     font-size: 12px;
     margin-bottom: 0px;
-    line-height: 1;
     color: #b0b0b0;
 }
 
@@ -148,10 +160,7 @@
     margin-bottom: 15px;
 }
 
-.radar__footer{
-    color: #8f8f8f;
-    font-weight: 600;
-}
+
 .radar__title{
     margin-bottom:30px;
     font-weight: bold;
@@ -162,12 +171,14 @@
     margin-bottom: 10px;
 }
 
-.footer_icons_i{
-    margin-left: 15px;
+.radar__footer{
+    color: #8f8f8f;
+    font-weight: 600;
+    font-size: 12px;
 }
 
-.light{
-    color: #A0A0A0;
+.light-color{
+    color: #8f8f8f;
 }
 
 .icon-on{

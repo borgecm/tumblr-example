@@ -16,46 +16,72 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-light tumblrnav">
       <div class="container">
-      <a class="navbar-brand navlogo" href="#">
-        <img src="./TumblrImgs/tumblrIcon.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <a class="navbar-brand navlogo" href="#">
+          <img src="./TumblrImgs/tumblrIcon.png" alt="">
+        </a>
         <form class="form-inline">
           <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
         </form>
-        <ul class="navbar-nav ml-auto d-flex align-items-center">
-          <li class="nav-item">
-            <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
-          </li>
-          <li class="nav-item">
-            <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
-          </li>
-          <li class="nav-item">
-            <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
-          </li>
-          <li class="nav-item">
-            <i class="far fa-user navImg icon-off flex-shrink-0"></i>
-          </li>
-          <li class="nav-item">
-            <div class="writeIcon">
-              <i class="fas fa-pen icon-off"></i>
-            </div>
-          </li>
-        </ul>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav  d-flex ml-auto">
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
+                <p class="d-inline d-md-none ml-3 text-white">Home</p>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
+                <p class="d-inline d-md-none ml-3 text-white">Notifications</p>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
+                <p class="d-inline d-md-none ml-3 text-white">Messages</p>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
+                <p class="d-inline d-md-none ml-3 text-white">Chats</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
+                <p class="d-inline d-md-none ml-3 text-white">Bolt</p>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="far fa-user navImg icon-off flex-shrink-0"></i>
+                <p class="d-inline d-md-none ml-3 text-white">Profile</p>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <div class="writeIcon">
+                <i class="fas fa-pen icon-off"></i>
+              </div>
+              <p class="d-inline d-md-none ml-3 text-white">Write</p>
+            </li>
+          </ul>
+
+        </div>
       </div>
-    </div>
     </nav>
     <!-- <nav class="navbar tumblrnav">
       <div class="container">
@@ -103,7 +129,7 @@
     <main class="main">
       <div class="row">
 
-        <div class="col-md-8">
+        <div class="col-md-8 col-lg-8">
           <section class="new-post">
             <div class="row">
               <div class="col-md-2">
@@ -112,33 +138,33 @@
                 </div>
               </div>
               <div class="col-md-10">
-                <div class="new-post__actions d-flex justify-content-around flex-row">
-                  
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="new-post__actions d-flex justify-content-around flex-wrap flex-sm-wrap flex-md-wrap flex-lg-nowrap">
+
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__text"></i>
                     <p>Text</p>
                   </button>
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__photo"></i>
                     <p>Photo</p>
                   </button>
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__quote"></i>
                     <p>Quote</p>
                   </button>
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__link"></i>
                     <p>Link</p>
                   </button>
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__chat"></i>
                     <p>Chat</p>
                   </button>
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__audio"></i>
                     <p>Audio</p>
                   </button>
-                  <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <button class="btn transparent-button" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="sprite sprite__video"></i>
                     <p>Video</p>
                   </button>
@@ -149,49 +175,84 @@
           <section class="feed">
             <article class="feed__post">
               <div class="row">
-                <div class="col-md-2 col-lg-2">
+                <div class="col-md-2">
                   <div class="feed__post__avatar">
-                    <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
+                    <img src="./TumblrImgs/pPhotoGuy.png" alt="">
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-10 col-lg-10">
-                  <!-- Usar un article pues es contenido q se puede compartir -->
-                  <div class="feed__post__card">
-                    <div class="feed__post__card__header d-flex justify-content-between">
+                <div class="col-sm-12 col-md-10">
 
-                      <div class="feed__post__card__header__text d-flex flex-row">
-                        <p>Here's a blog:
-                          <span class="feed__post__card__header__name">Bob Straus</span>
-                        </p>
+                  <div class="feed__post__card light-color">
 
-                        <a class="col" href="#">Follow</a>
-                      </div>
+                    <div class="feed__post__card__header">
 
-                      <div class="feed__post__card__header__icons d-flex flex-row  flex-shrink-0 align-items-start">
-                        <!-- Hay 2 tipos de imagenes, contenido y diseno(iconos con css) -->
-                        <i class="fas fa-times light col"></i>
-                        <i class="fas fa-compass light col"></i>
+                      <div class="row no-gutters">
+                        <div class="col-9">
+                          <div class="feed__post__card__header__text d-flex">
+                            <p>Here's a blog:
+                              <span class="feed__post__card__header__name">bob-strauss</span>
+                            </p>
+                            <a class="col" href="#">Follow</a>
+                          </div>
+                        </div>
 
-                      </div>
-
-                    </div>
-                    <div class="feed__post__card__content">
-                      <img class="card__photo" src="./TumblrImgs/mainPhoto.png" alt="">
-
-                    </div>
-                    <div class="feed__post__card__footer">
-                      <div class="hashtags">
-                        <p>#Cesar</p>
-                      </div>
-                      <div class="bottomCard d-flex justify-content-between">
-                        <p>200 notes</p>
-                        <div class="bottomCard__icons">
-                          <img class="feed__post__card__footer__icon" src="./TumblrImgs/sideArrow.png" alt="">
-                          <img class="feed__post__card__footer__icon" src="./TumblrImgs/greyChat.png" alt="">
-                          <img class="feed__post__card__footer__icon" src="./TumblrImgs/turn.png" alt="">
-                          <img src="./TumblrImgs/heart.png" alt="">
+                        <div class="col-3">
+                          <div class="feed__post__card__header__options d-flex ml-auto">
+                            <div class="feed__post__card__header__options_icons d-flex ml-auto">
+                              <button class="transparent-button btn col">
+                                <i class="fas fa-times light-color"></i>
+                              </button>
+                              <button class="transparent-button btn col">
+                                <i class="fas fa-compass light-color"></i>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                    </div>
+
+                    <div class="feed__post__card__content">
+                      <img class="feed__post__card__content__img" src="./TumblrImgs/mainPhoto.png" alt="">
+                    </div>
+                    <div class="feed__post__card__footer">
+                      <ul class="feed__post__card__footer__hashtags">
+                        <li class="feed__post__card__footer__hashtags__li">
+                          <a class="light-color" href="#">#forest</a>
+                        </li>
+                        <li class="feed__post__card__footer__hashtags__li">
+                          <a class="light-color" href="#">#nature</a>
+                        </li>
+                        <li class="feed__post__card__footer__hashtags__li">
+                          <a class="light-color" href="#">#darkness</a>
+                        </li>
+                        <li class="feed__post__card__footer__hashtags__li">
+                          <a class="light-color" href="#">#blackforest</a>
+                        </li>
+                      </ul>
+                      <div class="row">
+                        <div class="col-lg-5 col-md-5 mb-3">
+                          <a href="#" class="feed__post__card__footer__notes light-color">234,450 notes</a>
+                        </div>
+                        <div class="offset-lg-2 col-lg-5 offset-md-1 col-md-5">
+                          <div class="feed__post__card__footer__options d-flex justify-content-between ml-auto">
+                            <button class="transparent-button btn">
+                              <i class="fas fa-location-arrow light-color"></i>
+                            </button>
+                            <button class="transparent-button btn">
+                              <i class="far fa-comment light-color"></i>
+                            </button>
+                            <button class="transparent-button btn">
+                              <i class="fas fa-retweet light-color"></i>
+                            </button>
+                            <button class="transparent-button btn">
+                              <i class="far fa-heart light-color"></i>
+                            </button>
+
+                          </div>
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
 
@@ -207,31 +268,32 @@
 
 
         <!-- Ponerle un offset -->
-        <div class="offset-lg-1 col-lg-3 col-sm-12 col-md-4">
-          <div class="aside">
-            <div class="blogs">
+        <div class="col-md-4 offset-lg-1 col-lg-3">
+          <aside>
+            <section class="blogs">
               <!-- Tenerle un section a cada seccion -->
               <p class="blogs__title">RECOMMENDED BLOGS</p>
-              <div class="blog d-flex flex-row justify-content-between">
+              <div class="blogs__blog d-flex flex-row justify-content-between">
                 <div class="blog__left d-flex flex-row justify-content-start">
                   <div>
-                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
+                    <img class="blogs__blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
                   </div>
-
                   <div class="blog__left__text">
                     <p class="blog__left__text__name">username</p>
                     <p class="blog__left__text__desc">Tumblr user name</p>
                   </div>
                 </div>
                 <div class="blog__right">
-                  <img src="./TumblrImgs/plusBox.png" alt="">
+                  <button class="transparent-button btn">
+                    <i class="far fa-plus-square light-color"></i>
+                  </button>
                 </div>
               </div>
               <hr>
-              <div class="blog d-flex flex-row justify-content-between">
+              <div class="blogs__blog d-flex flex-row justify-content-between">
                 <div class="blog__left d-flex flex-row justify-content-start">
                   <div>
-                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR2.png" alt="">
+                    <img class="blogs__blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR2.png" alt="">
                   </div>
 
                   <div class="blog__left__text">
@@ -240,14 +302,16 @@
                   </div>
                 </div>
                 <div class="blog__right">
-                  <img src="./TumblrImgs/plusBox.png" alt="">
+                  <button class="transparent-button btn">
+                    <i class="far fa-plus-square light-color"></i>
+                  </button>
                 </div>
               </div>
               <hr>
-              <div class="blog d-flex flex-row justify-content-between">
+              <div class="blogs__blog d-flex flex-row justify-content-between">
                 <div class="blog__left d-flex flex-row justify-content-start">
                   <div>
-                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR3.png" alt="">
+                    <img class="blogs__blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR3.png" alt="">
                   </div>
 
                   <div class="blog__left__text">
@@ -256,14 +320,16 @@
                   </div>
                 </div>
                 <div class="blog__right">
-                  <img src="./TumblrImgs/plusBox.png" alt="">
+                  <button class="transparent-button btn">
+                    <i class="far fa-plus-square light-color"></i>
+                  </button>
                 </div>
               </div>
               <hr>
-              <div class="blog d-flex flex-row justify-content-between">
+              <div class="blogs__blog d-flex flex-row justify-content-between">
                 <div class="blog__left d-flex flex-row justify-content-start">
                   <div>
-                    <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR4.png" alt="">
+                    <img class="blogs__blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR4.png" alt="">
                   </div>
 
                   <div class="blog__left__text">
@@ -272,19 +338,24 @@
                   </div>
                 </div>
                 <div class="blog__right">
-                  <img src="./TumblrImgs/plusBox.png" alt="">
+                  <button class="transparent-button btn">
+                    <i class="far fa-plus-square light-color"></i>
+                  </button>
                 </div>
               </div>
               <hr>
               <a class="blogs__link" href="">EXPLORE TUMBLR</a>
-            </div>
-            <div class="radar">
-              <p class="radar__title">RADAR</p>
+            </section>
+            <section class="radar">
+              <div class="radar__header">
+                <p class="radar__title">RADAR</p>
+              </div>
+
               <div class="radar__content">
                 <div class="radar__blog d-flex flex-row justify-content-between">
                   <div class="blog__left d-flex flex-row justify-content-start">
                     <div>
-                      <img class="blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoRadarGirl.png" alt="">
+                      <img class="blogs__blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoRadarGirl.png" alt="">
                     </div>
 
                     <div class="blog__left__text">
@@ -293,22 +364,28 @@
                     </div>
                   </div>
                   <div class="blog__right">
-                    <img src="./TumblrImgs/plusBox.png" alt="">
+                    <button class="transparent-button btn">
+                      <i class="far fa-plus-square light-color"></i>
+                    </button>
                   </div>
                 </div>
-                <img src="./TumblrImgs/radarPhoto.png" alt="" class="radar__image">
+                <img class="radar__image" src="./TumblrImgs/radarPhoto.png" alt="">
               </div>
 
               <div class="radar__footer d-flex flex-row justify-content-between">
                 <p>1,320 notes</p>
-                <div class="radar__footer_icons">
-                  <img src="./TumblrImgs/turn.png" alt="" class="footer_icons_i">
-                  <img src="./TumblrImgs/heart.png" alt="" class="footer_icons_i">
+                <div class="radar__footer_icons flex-shrink-0">
+                  <button class="transparent-button btn">
+                    <i class="far fa-heart light-color"></i>
+                  </button>
+                  <button class="transparent-button btn">
+                    <i class="fas fa-retweet light-color"></i>
+                  </button>
                 </div>
               </div>
-            </div>
+            </section>
 
-          </div>
+          </aside>
         </div>
       </div>
   </div>
