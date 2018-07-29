@@ -12,118 +12,82 @@
 </head>
 
 <body class="index-body">
-  <!-- Just an image -->
   <header>
     <nav class="navbar navbar-expand-md navbar-light tumblrnav">
       <div class="container">
-        <a class="navbar-brand navlogo" href="#">
+        <a class="navbar-brand navlogo" href="./login.html">
           <img src="./TumblrImgs/tumblrIcon.png" alt="">
         </a>
-        <form class="form-inline">
-          <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
-        </form>
+        
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <form class="form-inline">
+                <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
+            </form>
           <ul class="navbar-nav  d-flex ml-auto">
-            <li class="nav-item">
-              <a href="#">
-                <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
+            
+            <li class="nav-item navImg">
+              <a class="nav-link" href="#">
+                <i class="fas fa-home icon-on flex-shrink-0"></i>
                 <p class="d-inline d-md-none ml-3 text-white">Home</p>
               </a>
 
             </li>
-            <li class="nav-item">
-              <a href="#">
-                <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
+            <li class="nav-item navImg">
+              <a class="nav-link" href="#">
+                <i class="fas fa-compass icon-off flex-shrink-0"></i>
                 <p class="d-inline d-md-none ml-3 text-white">Notifications</p>
               </a>
 
             </li>
-            <li class="nav-item">
-              <a href="#">
-                <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
+            <li class="nav-item navImg">
+              <a class="nav-link" href="#">
+                <i class="far fa-envelope icon-off flex-shrink-0"></i>
                 <p class="d-inline d-md-none ml-3 text-white">Messages</p>
               </a>
 
             </li>
-            <li class="nav-item">
-              <a href="#">
-                <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
+            <li class="nav-item navImg">
+              <a class="nav-link" href="#">
+                <i class="far fa-comment icon-off flex-shrink-0"></i>
                 <p class="d-inline d-md-none ml-3 text-white">Chats</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#">
-                <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
+            <li class="nav-item navImg">
+              <a class="nav-link" href="#">
+                <i class="fas fa-bolt icon-off flex-shrink-0"></i>
                 <p class="d-inline d-md-none ml-3 text-white">Bolt</p>
               </a>
 
             </li>
-            <li class="nav-item">
-              <a href="#">
-                <i class="far fa-user navImg icon-off flex-shrink-0"></i>
+            <li class="nav-item navImg">
+              <a class="nav-link" href="#">
+                <i class="far fa-user icon-off flex-shrink-0"></i>
                 <p class="d-inline d-md-none ml-3 text-white">Profile</p>
               </a>
-
             </li>
-            <li class="nav-item">
-              <div class="writeIcon">
+            <li class="nav-item ">
+              <a href="#" class="nav-link d-none d-sm-none d-md-block writeIcon">
                 <i class="fas fa-pen icon-off"></i>
-              </div>
-              <p class="d-inline d-md-none ml-3 text-white">Write</p>
+              </a>
+                
+            </li>
+            <li class="nav-item navImg d-md-none">
+              <a class="nav-link" href="#">
+                  <i class="fas fa-pen icon-off"></i>
+                  <p class="d-inline ml-3 text-white">Write</p>
+              </a>
             </li>
           </ul>
 
         </div>
       </div>
     </nav>
-    <!-- <nav class="navbar tumblrnav">
-      <div class="container">
-        <div class="d-flex flex-row tumlrnav__left ">
-          <a class="navbar-brand navlogo" href="#">
-            <img src="./TumblrImgs/tumblrIcon.png" alt="">
-          </a>
-          <form class="form-inline">
-            <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
-          </form>
-        </div>
-        <div class="d-flex flex-row tumlrnav__right align-items-center">
-          <div>
-            <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
-          </div>
-
-          <div>
-            <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
-          </div>
-          <div>
-            <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
-          </div>
-          <div>
-            <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
-          </div>
-          <div>
-            <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
-          </div>
-          <div>
-            <i class="far fa-user navImg icon-off flex-shrink-0"></i>
-          </div>
-          <div class="writeIcon">
-            <i class="fas fa-pen icon-off"></i>
-          </div>
-        </div>
-      </div>
-
-
-
-    </nav> -->
   </header>
-
 
   <div class="container">
     <main class="main">
@@ -176,9 +140,9 @@
             <article class="feed__post">
               <div class="row">
                 <div class="col-md-2">
-                  <div class="feed__post__avatar">
+                  <a href="#" class="feed__post__avatar">
                     <img src="./TumblrImgs/pPhotoGuy.png" alt="">
-                  </div>
+                  </a>
                 </div>
                 <div class="col-sm-12 col-md-10">
 
@@ -190,7 +154,7 @@
                         <div class="col-9">
                           <div class="feed__post__card__header__text d-flex">
                             <p>Here's a blog:
-                              <span class="feed__post__card__header__name">bob-strauss</span>
+                              <span class="feed__post__card__header__name"><a href="#" class="light-color">bob-strauss</a></span>
                             </p>
                             <a class="col" href="#">Follow</a>
                           </div>
@@ -262,16 +226,11 @@
             </article>
 
           </section>
-
-
         </div>
 
-
-        <!-- Ponerle un offset -->
         <div class="col-md-4 offset-lg-1 col-lg-3">
           <aside>
             <section class="blogs">
-              <!-- Tenerle un section a cada seccion -->
               <p class="blogs__title">RECOMMENDED BLOGS</p>
               <div class="blogs__blog d-flex flex-row justify-content-between">
                 <div class="blog__left d-flex flex-row justify-content-start">
@@ -279,7 +238,7 @@
                     <img class="blogs__blog__avatar flex-shrink-0" src="./TumblrImgs/pPhotoR1.png" alt="">
                   </div>
                   <div class="blog__left__text">
-                    <p class="blog__left__text__name">username</p>
+                    <a href="#" class="blog__left__text__name">username</a>
                     <p class="blog__left__text__desc">Tumblr user name</p>
                   </div>
                 </div>
@@ -297,7 +256,7 @@
                   </div>
 
                   <div class="blog__left__text">
-                    <p class="blog__left__text__name">username</p>
+                      <a href="#" class="blog__left__text__name">username</a>
                     <p class="blog__left__text__desc">Tumblr username</p>
                   </div>
                 </div>
@@ -315,7 +274,7 @@
                   </div>
 
                   <div class="blog__left__text">
-                    <p class="blog__left__text__name">username</p>
+                      <a href="#" class="blog__left__text__name">username</a>
                     <p class="blog__left__text__desc">Tumblr username</p>
                   </div>
                 </div>
@@ -333,7 +292,7 @@
                   </div>
 
                   <div class="blog__left__text">
-                    <p class="blog__left__text__name">username</p>
+                      <a href="#" class="blog__left__text__name">username</a>
                     <p class="blog__left__text__desc">Tumblr username</p>
                   </div>
                 </div>
@@ -359,7 +318,7 @@
                     </div>
 
                     <div class="blog__left__text">
-                      <p class="blog__left__text__name">username</p>
+                      <a href="#" class="blog__left__text__name">username</a>
                       <p class="blog__left__text__desc">Tumblr username</p>
                     </div>
                   </div>
@@ -373,7 +332,7 @@
               </div>
 
               <div class="radar__footer d-flex flex-row justify-content-between">
-                <p>1,320 notes</p>
+                <a class="light-color" href="#">1,320 notes</a>
                 <div class="radar__footer_icons flex-shrink-0">
                   <button class="transparent-button btn">
                     <i class="far fa-heart light-color"></i>
@@ -389,34 +348,34 @@
         </div>
       </div>
   </div>
-  </div>
-
-  <!-- Modal -->
+ 
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalCenterTitle">mikemike
-            <i class="sprite sprite__arrow"></i>
+            <button class="transparent-button btn"><i class="sprite sprite__arrow"></i></button>   
           </h5>
-          <i class="sprite sprite__conf"></i>
+          <button class="transparent-button btn"><i class="sprite sprite__conf"></i></button>
 
         </div>
         <div class="modal-body">
           <div class="modal_content">
             <div class="d-flex justify-content-around">
-              <div class="option d-flex flex-column align-items-center justify-content-between">
-                <i class="sprite sprite__camera-modal align-self-center"></i>
-                <p class="option__text">Upload photos</p>
-              </div>
-              <div class="option d-flex flex-column align-items-center justify-content-between">
-                <i class="sprite sprite__globo"></i>
-                <p class="option__text">Upload photos</p>
-              </div>
+              <button class="transparent-button btn">
+                <div class="option d-flex flex-column align-items-center justify-content-between">
+                  <i class="sprite sprite__camera-modal align-self-center"></i>
+                  <p class="option__text">Upload photos</p>
+                </div>
+              </button> 
+              <button class="transparent-button btn">
+                <div class="option d-flex flex-column align-items-center justify-content-between">
+                  <i class="sprite sprite__globo"></i>
+                  <p class="option__text">Upload photos</p>
+                </div>
+              </button> 
             </div>
-
-
           </div>
 
         </div>
@@ -429,8 +388,6 @@
           <button type="button" class="btn modal__footer__post">Post
             <i class="fas fa-angle-down post__arrow"></i>
           </button>
-
-
         </div>
       </div>
     </div>
