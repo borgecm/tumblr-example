@@ -65,7 +65,6 @@ gulp.task('lint-css', function lintCssTask() {
 gulp.task('start', [
     'html',
     'styles',
-    'server',
     'lint-css',
     'fonts',
     'watch'
