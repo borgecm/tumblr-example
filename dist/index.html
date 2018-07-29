@@ -14,7 +14,50 @@
 <body class="index-body">
   <!-- Just an image -->
   <header>
-    <nav class="navbar tumblrnav">
+    <nav class="navbar navbar-expand-md navbar-light tumblrnav">
+      <div class="container">
+      <a class="navbar-brand navlogo" href="#">
+        <img src="./TumblrImgs/tumblrIcon.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <form class="form-inline">
+          <input class="tumblrinput" type="search" placeholder="Search Tumblr" aria-label="Search">
+        </form>
+        <ul class="navbar-nav ml-auto d-flex align-items-center">
+          <li class="nav-item">
+            <i class="fas fa-home navImg icon-on flex-shrink-0"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-compass navImg icon-off flex-shrink-0"></i>
+          </li>
+          <li class="nav-item">
+            <i class="far fa-envelope navImg icon-off flex-shrink-0"></i>
+          </li>
+          <li class="nav-item">
+            <i class="far fa-comment navImg icon-off flex-shrink-0"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-bolt navImg icon-off flex-shrink-0"></i>
+          </li>
+          <li class="nav-item">
+            <i class="far fa-user navImg icon-off flex-shrink-0"></i>
+          </li>
+          <li class="nav-item">
+            <div class="writeIcon">
+              <i class="fas fa-pen icon-off"></i>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    </nav>
+    <!-- <nav class="navbar tumblrnav">
       <div class="container">
         <div class="d-flex flex-row tumlrnav__left ">
           <a class="navbar-brand navlogo" href="#">
@@ -52,7 +95,7 @@
 
 
 
-    </nav>
+    </nav> -->
   </header>
 
 
@@ -65,41 +108,39 @@
             <div class="row">
               <div class="col-md-2">
                 <div class="new-post__avatar">
-                    <img src="./TumblrImgs/pPhotoRetroGirl.png" alt="" class="avatar">
+                  <img src="./TumblrImgs/pPhotoRetroGirl.png" alt="" class="avatar">
                 </div>
               </div>
               <div class="col-md-10">
                 <div class="new-post__actions d-flex justify-content-around flex-row">
-                  <!-- <div data-toggle="modal" data-target="#exampleModalCenter" class="actionIcon d-flex flex-column align-items-center justify-content-between">
-                    
-                  </div> -->
+                  
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__text"></i>
-                      <p>Text</p>
+                    <i class="sprite sprite__text"></i>
+                    <p>Text</p>
                   </button>
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__photo"></i>
-                      <p>Photo</p>
+                    <i class="sprite sprite__photo"></i>
+                    <p>Photo</p>
                   </button>
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__quote"></i>
-                      <p>Quote</p>
+                    <i class="sprite sprite__quote"></i>
+                    <p>Quote</p>
                   </button>
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__link"></i>
-                      <p>Link</p>
+                    <i class="sprite sprite__link"></i>
+                    <p>Link</p>
                   </button>
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__chat"></i>
-                      <p>Chat</p>
+                    <i class="sprite sprite__chat"></i>
+                    <p>Chat</p>
                   </button>
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__audio"></i>
-                      <p>Audio</p>
+                    <i class="sprite sprite__audio"></i>
+                    <p>Audio</p>
                   </button>
                   <button class="btn new-post__actions__btn" data-toggle="modal" data-target="#exampleModalCenter">
-                      <i class="sprite sprite__video"></i>
-                      <p>Video</p>
+                    <i class="sprite sprite__video"></i>
+                    <p>Video</p>
                   </button>
                 </div>
               </div>
@@ -110,7 +151,7 @@
               <div class="row">
                 <div class="col-md-2 col-lg-2">
                   <div class="feed__post__avatar">
-                      <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
+                    <img src="./TumblrImgs/pPhotoGuy.png" alt="" class="avatar">
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-10 col-lg-10">
