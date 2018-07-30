@@ -49,6 +49,11 @@ gulp.task('fonts', () => {
       .pipe(gulp.dest('dist/fonts/'));
   });
 
+  gulp.task('overwrite_vars', () => {
+    return gulp.src('src/scss/helpers/_variables.scss')
+      .pipe(gulp.dest('node_modules/@fortawesome/fontawesome-free/scss'));
+  });
+
 gulp.task('lint-css', function lintCssTask() {
     const gulpStylelint = require('gulp-stylelint');
   
@@ -63,6 +68,7 @@ gulp.task('lint-css', function lintCssTask() {
   });
 
 gulp.task('start', [
+    'overwrite_vars',
     'html',
     'styles',
     'fonts'
