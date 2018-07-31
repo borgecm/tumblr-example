@@ -1,5 +1,5 @@
 .login-main{
-  padding-top: 26.2vh;
+  padding-top: 18.2vh;
   
 }
 
@@ -12,24 +12,28 @@
   height: 100vh;
   
 }
-.login-form{
+.login{
   margin-bottom: 10vh;
 }
 
-.login-form__logo{
-  margin-bottom: 12vh;
+.login__form{
+  width: 100%;
 }
 
-.login-form__email-input{
-  padding: 18px 30px;
+.login__logo{
+  margin-bottom: 7vh;
+}
+
+.login__form__email-input{
+  padding: 12px 30px;
   margin-bottom: 3.6vh;
   line-height: 1;
 }
 
-.login-form__next-btn{
+.login__form__next-btn{
   background-color: #ec8524;
   color: white;
-  padding: 22px 0;
+  padding: 12px 0;
   border: none;
   font-weight: bold;
   margin-bottom: 7.2vh;
@@ -38,7 +42,7 @@
   
 }
 
-.login-form__sign-up-link{
+.login__form__sign-up-link{
   background-color: transparent;
   color: white;
   border: none;
@@ -48,4 +52,8 @@
 
 .footer__link{
   color: #9fa3a7;
+}
+
+#error-message{
+  display: none;
 }
